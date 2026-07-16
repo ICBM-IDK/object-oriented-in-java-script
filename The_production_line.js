@@ -67,9 +67,9 @@ const Cadi = {make : "GM",
                 started: false
 }
 
-var New_Chevy = new Vroom(Chevy)
-var New_Fiat = new Vroom(Fiat)
-var New_Cadi = new Vroom(Cadi)
+const New_Chevy = new Vroom(Chevy)
+const New_Fiat = new Vroom(Fiat)
+const New_Cadi = new Vroom(Cadi)
 
 var cars = [New_Chevy,New_Fiat,New_Cadi]
 
