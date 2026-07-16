@@ -74,6 +74,7 @@ delete Commander_fido.weight;
 Commander_fido.trust = function(person){
     return (person === "bob")
 };
+var notBite = Commander_fido.trust("Bob");
 
 
 var Chevy = {make : "Chevy",
