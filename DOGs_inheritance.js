@@ -55,3 +55,33 @@ Sergeant_spot.bark = function (){
 //Sergeant_spot.sitting = true
 //console.log(Sergeant_spot.hasOwnProperty("sitting"))
 
+function Show_Dog(name, breed, weight, handler){
+    this.name =name;
+    this.breed=breed;
+    this.weight =weight;
+    this.handler=handler;
+}
+Show_Dog.prototype = new Dog();
+Show_Dog.prototype.league = "Webville";
+
+
+
+Show_Dog.prototype.stack = function() {
+    console.log("stack");
+}
+Show_Dog.prototype.bait = function () {
+    console.log("Bait");
+}
+Show_Dog.prototype.gait = function (kind) {
+    console.log(kind + "ing")
+}
+Show_Dog.prototype.groom = function () {
+    console.log("groom")
+}
+
+var Scotty = new Show_Dog("Scotty","Scottish Terrier",15,"Stalin")
+Scotty.stack();
+Scotty.bark();
+Scotty.bait();
+console.log(Scotty.league);
+console.log(Scotty.species);
