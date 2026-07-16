@@ -36,7 +36,35 @@ function Vroom(parameters){
 
 }
 
-
+function Dog(Dog_stats) {
+    this.name = Dog_stats.name;
+    this.breed= Dog_stats.breed;
+    this.weight = Dog_stats.weight;
+    this.bark = function(){
+        if (this.weight > 25) {
+            alert(this.name + " says woof! ");
+        }
+        else{
+            alert(this.name + " says Yip! ");
+        }
+    };
+}
+var Private_fluffers = {
+                            name: "Fluffers",
+                            breed: "poodle",
+                            weight: 30
+}
+var Sergeant_spot ={
+                            name: "Spot",
+                            breed: "chihuahua",
+                            weight: 10
+}
+var Commander_fido = {
+                            name: "Fido",
+                            breed: "mixed",
+                            weight: 38
+}
+var army = new Dog[Private_fluffers,Sergeant_spot,Commander_fido]
 
 
 const Chevy = {make : "Chevy",
@@ -78,4 +106,8 @@ for (index=0; index < cars.length; index ++){
     cars[index].drive()
     cars[index].drive()
     cars[index].stop()
+}
+
+if (Cadi instanceof Vroom){
+    console.log("Congratulations ", Cadi.make + "," + Cadi.model + " is a car!!!!!!!")
 }
