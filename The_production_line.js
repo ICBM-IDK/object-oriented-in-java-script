@@ -114,3 +114,7 @@ console.log("test")
 if (Cadi instanceof Vroom){
     console.log("Congratulations ", Cadi.make + "," + Cadi.model + " is a car!!!!!!!")
 }
+
+for (index = 0; index < army.length; index++){
+    army[index].bark()
+}
