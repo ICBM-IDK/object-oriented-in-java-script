@@ -64,7 +64,10 @@ var Commander_fido = {
                             breed: "mixed",
                             weight: 38
 }
-var army = new Dog[Private_fluffers,Sergeant_spot,Commander_fido]
+Private_fluffers = new Dog(Private_fluffers)
+Sergeant_spot = new Dog(Sergeant_spot)
+Commander_fido = new Dog(Commander_fido)
+var army = [Private_fluffers,Sergeant_spot,Commander_fido]
 
 
 const Chevy = {make : "Chevy",
