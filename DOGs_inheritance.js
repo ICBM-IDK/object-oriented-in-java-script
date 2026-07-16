@@ -18,8 +18,16 @@ Dog.prototype.wag = function (){
 }
 
 Dog.prototype.sit = function (){
-    console.log(this.name + " is now sitting");
+    if (this.sitting){
+        console.log(this.name + " is already sitting")
+    }
+    else{
+        this.sitting = true;
+        console.log(this.name + " is now sitting");
+    }
 }
+
+Dog.prototype.sitting = false;
 
 function Dog(name, breed, weight) {
     this.name =name;
@@ -37,8 +45,13 @@ Sergeant_spot.bark = function (){
     alert(this.name + " says exterminate")
 };
 
-Private_fluffers.bark()
-Sergeant_spot.run()
-Commander_fido.wag()
-Sergeant_spot.bark()
-Brigadier_Barnaby.sit()
+//Private_fluffers.bark()
+//Sergeant_spot.run()
+//Commander_fido.wag()
+//Sergeant_spot.bark()
+//Brigadier_Barnaby.sit()
+//console.log(Sergeant_spot.hasOwnProperty("species"))
+//console.log(Sergeant_spot.hasOwnProperty("sitting"))
+//Sergeant_spot.sitting = true
+//console.log(Sergeant_spot.hasOwnProperty("sitting"))
+
