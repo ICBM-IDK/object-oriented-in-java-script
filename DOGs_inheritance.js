@@ -56,12 +56,12 @@ Sergeant_spot.bark = function (){
 //console.log(Sergeant_spot.hasOwnProperty("sitting"))
 
 function Show_Dog(name, breed, weight, handler){
-    this.name =name;
-    this.breed=breed;
-    this.weight =weight;
+    Dog.call(this, name, breed, weight)
     this.handler=handler;
 }
 Show_Dog.prototype = new Dog();
+
+Show_Dog.prototype.constructor = Show_Dog;
 
 Show_Dog.prototype.league = "Webville";
 
