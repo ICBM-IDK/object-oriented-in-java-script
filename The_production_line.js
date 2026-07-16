@@ -70,7 +70,7 @@ Commander_fido = new Dog(Commander_fido)
 var army = [Private_fluffers,Sergeant_spot,Commander_fido]
 
 
-const Chevy = {make : "Chevy",
+var Chevy = {make : "Chevy",
                   model: "bel Air",
                   year: 1957,
                   colour: "red",
@@ -79,7 +79,7 @@ const Chevy = {make : "Chevy",
                   mileage: 1021,
                   started: false
 }
-const Fiat = {make : "Fiat",
+var Fiat = {make : "Fiat",
                 model: "500",
                 year: 1957,
                 colour: "medium Blue",
@@ -88,7 +88,7 @@ const Fiat = {make : "Fiat",
                 mileage: 88000,
                 started: false
 }
-const Cadi = {make : "GM",
+var Cadi = {make : "GM",
                 model: "Cadillac",
                 year: 1955,
                 colour: "tan",
@@ -98,11 +98,11 @@ const Cadi = {make : "GM",
                 started: false
 }
 
-const New_Chevy = new Vroom(Chevy)
-const New_Fiat = new Vroom(Fiat)
-const New_Cadi = new Vroom(Cadi)
+Chevy = new Vroom(Chevy)
+Fiat = new Vroom(Fiat)
+Cadi = new Vroom(Cadi)
 
-var cars = [New_Chevy,New_Fiat,New_Cadi]
+var cars = [Chevy,Fiat,Cadi]
 
 for (index=0; index < cars.length; index ++){
     cars[index].start()
@@ -110,7 +110,7 @@ for (index=0; index < cars.length; index ++){
     cars[index].drive()
     cars[index].stop()
 }
-
+console.log("test")
 if (Cadi instanceof Vroom){
     console.log("Congratulations ", Cadi.make + "," + Cadi.model + " is a car!!!!!!!")
 }
