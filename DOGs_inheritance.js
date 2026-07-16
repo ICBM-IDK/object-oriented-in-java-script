@@ -62,9 +62,8 @@ function Show_Dog(name, breed, weight, handler){
     this.handler=handler;
 }
 Show_Dog.prototype = new Dog();
+
 Show_Dog.prototype.league = "Webville";
-
-
 
 Show_Dog.prototype.stack = function() {
     console.log("stack");
