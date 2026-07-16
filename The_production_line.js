@@ -69,6 +69,12 @@ Sergeant_spot = new Dog(Sergeant_spot)
 Commander_fido = new Dog(Commander_fido)
 var army = [Private_fluffers,Sergeant_spot,Commander_fido]
 
+Commander_fido.owner = "bob";
+delete Commander_fido.weight;
+Commander_fido.trust = function(person){
+    return (person === "bob")
+};
+
 
 var Chevy = {make : "Chevy",
                   model: "bel Air",
